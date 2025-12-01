@@ -1,0 +1,47 @@
+<!-- Program Demonstrating Combinator Selectors in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators Selectors</title>
+
+    <!-- CSS Code -->
+    <style>
+        /* Desendent Selector (Space)*/
+        div p {
+          color:darkgreen;
+        }
+
+        /* Parent and Child Selector (>) */
+        body > h1 {
+            color:brown;
+        }
+
+        /* Next Sibling Combinator (+) */
+        /* div + p {
+            color:darkblue;
+        } */
+
+        /* Subsequent-Sibling Combinator (~) */
+        div ~ p {
+            color:darkmagenta;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Combinators Selectors Example 
+        (Desendent Selector, Child Combinator, Next Sibling Combinator, Subsequent-Sibling Combinator)</h1>
+    <div>
+        <p>This is Desendent Selector Paragraph 1</p>
+        <p>This is Desendent Selector Paragraph 2</p>
+        <h1>This is Heading</h1>
+    </div>
+
+    <p>This is Outside Paragraph</p>
+    <p>This another Outside Paragraph</p>
+
+
+</body>
+</html>

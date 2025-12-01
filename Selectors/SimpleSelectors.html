@@ -1,0 +1,79 @@
+<!-- Program Demonstrating Simple Selectors in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class-Selectors</title>
+
+    <!-- CSS Code -->
+    <style>
+        /* Class Selectors - Use .classname to select elements by class.*/
+        .green{
+            color:green
+        }
+        .red{
+            color:red;
+        }
+        .uppercase{
+            text-transform: uppercase;
+            font-weight: bold;
+            color:coral
+        }
+        /* Id Selectors - Use #id to select an element by its ID. */
+        #blue{
+            color:blue;
+        }
+        #darkgoldenrod{
+            color:darkgoldenrod;
+        }
+        /* Element Selectors - Use element to select by tag name.*/
+        h3{
+            color:chartreuse;
+        }
+        h2{
+            color:deeppink;
+        }
+        p{
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 20px;
+        }
+        /* Group Selectors
+        h1,h2,h3 {
+            color:yellow;
+        } */
+    </style>
+    
+</head>
+<body>
+    <!-- Multiple Class Names (ex:class="title uppercase") -->
+    <p id="title" class="title uppercase">Simple Selectors (Class Selectors, Element Selectors, Id Selectors, Group Selector)</p>
+    <h1>Class Selectors</h1>
+    <h3 class="green">Hi i am Green</h3>
+    <h3 class="red">Hello i am Red</h3>
+    <h3 class="green">Hi i am Green</h3>
+    <h3 class="red">Hello i am Red</h3>
+    <h3 class="green">Hi i am Green</h3>
+
+    <h1>Id Selectors</h1>
+    <h3 id="blue">Hello i am blue</h3>
+    <h3 id="darkgoldenrod">Hi i am darkgoldenrod</h3>
+    <h3 id="blue">Hello i am blue</h3>
+    <h3 id="darkgoldenrod">Hi i am darkgoldenrod</h3>
+    <h3 id="blue">Hello i am blue</h3>
+    
+    <h1>Element Selectors</h1>
+    <h3>Hi iam chartreuse</h3>
+    <h2>Hello iam deeppink</h2>
+    <h3>Hi iam chartreuse</h3>
+    <h2>Hello iam deeppink</h2>
+    <h3>Hi iam chartreuse</h3>
+
+    <h1>Group Selectos</h1>
+    <h3>Hello iam yellow</h3>
+    <h2>Hello iam yellow</h2>
+    <h1>Hello iam yellow</h1>
+
+</body>
+</html>
