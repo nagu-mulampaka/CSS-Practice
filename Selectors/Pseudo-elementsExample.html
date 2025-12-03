@@ -1,0 +1,75 @@
+<!-- program demonstrating Pseudo-element Selectors with HTML and CSS examples -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Example</title>
+
+    <style>
+        /* Using ::before and ::after */
+        .title::before {
+            content: "✨ ";   /* Inserted before heading text */
+            color: gold;
+        }
+
+        .title::after {
+            content: " ✨";  /* Inserted after heading text */
+            color: gold;
+        }
+
+        /* Using ::first-letter */
+        .para::first-letter {
+            font-size: 40px;   /* Big first letter */
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Using ::first-line */
+        .para::first-line {
+            color: red;        /* First line styling */
+            font-weight: bold;
+        }
+
+        /* Using ::selection */
+        ::selection {
+            background-color: yellow;  /* Selected text background */
+            color: black;              /* Selected text color */
+        }
+
+        /* Using ::placeholder */
+        .input-box::placeholder {
+            color: gray;        /* Placeholder text color */
+            font-style: italic;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .input-box {
+            margin-top: 15px;
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading with ::before and ::after -->
+    <h2 class="title">Welcome to My Website</h2>
+
+    <!-- Paragraph using ::first-letter and ::first-line -->
+    <p class="para">
+        Learning CSS makes designing websites more powerful and creative.
+        Pseudo-elements allow us to style specific parts of elements.
+        With practice, we can create beautiful and interactive UI.
+    </p>
+
+    <!-- Input field using ::placeholder -->
+    <input type="text" class="input-box" placeholder="Enter your name">
+
+</body>
+</html>
