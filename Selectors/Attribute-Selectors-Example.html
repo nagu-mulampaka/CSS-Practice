@@ -1,0 +1,47 @@
+<!-- simple HTML + CSS program demonstrating Attribute Selectors in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors Example</title>
+
+    <style>
+        /* Selects all inputs that have a type attribute */
+        input[type] {
+            border: 2px solid black;
+            padding: 8px;
+            margin: 5px;
+        }
+
+        /* Selects id attribute tags */
+        h1[id="about"] {
+            color:red;
+        }
+
+        /* Selects input with type="text" */
+        input[type="text"] {
+            background-color: lightyellow;
+        }
+
+        /* Selects input type that STARTS with 'pass' (password) */
+        input[type="password"] {
+            background-color: lightpink;
+        }
+   
+    </style>
+</head>
+<body>
+
+    <h2>Attribute Selectors Example</h2>
+
+    <!-- Input fields with different attribute selectors -->
+    <h1 id="about">Hello Everyone My Name is Nagu Mulampaka</h1>
+    <h1 id="place">i am from Vizag, Lawsons Bay Colony</h1>
+    <input type="text" placeholder="Enter Name">
+    <input type="password" placeholder="Enter Password">
+    <input type="email" placeholder="Enter Email">
+    <br><br>
+
+</body>
+</html>
