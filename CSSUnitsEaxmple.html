@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Example</title>
+
+  <!-- CSS Code -->
+  <style>
+    html {
+      font-size: 16px; /* Base font-size for rem unit */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Common style */
+    .box {
+      margin: 15px 0;
+      padding: 10px;
+      background-color: lightgray;
+      border: 2px solid black;
+    }  
+
+    /* px example */
+    .px-box {
+      width: 300px;
+      font-size: 18px;
+    }
+
+    /* em example (depends on parent element font size) */
+    .em-box {
+      font-size: 1.5em; /* 1.5 x parent size */
+      width: 25em;      /* scales relative to font */
+    }
+
+    /* rem example (depends on root html font size) */
+    .rem-box {
+      font-size: 2rem;  /* 2 x 16px = 32px */
+      width: 20rem;     /* 20 x 16px = 320px */
+    }
+
+    /* vw & vh example (relative to viewport width & height) */
+    .vw-vh-box {
+      width: 50vw;   /* 50% of viewport width */
+      height: 10vh;  /* 10% of viewport height */
+    }
+
+    /* % example (relative to parent width) */
+    .percent-box {
+      width: 60%; /* 60% of body width */
+      font-size: 1.2rem;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>CSS Units Example</h1>
+
+  <div class="box px-box">This box uses <strong>px (Pixels)</strong></div>
+  <div class="box em-box">This box uses <strong>em</strong></div>
+  <div class="box rem-box">This box uses <strong>rem</strong></div>
+  <div class="box vw-vh-box">This box uses <strong>vw & vh</strong></div>
+  <div class="box percent-box">This box uses <strong>% (Percentage)</strong></div>
+
+</body>
+</html>
