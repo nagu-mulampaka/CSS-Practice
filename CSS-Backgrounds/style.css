@@ -1,0 +1,75 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(./images/background_image.jpg);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+    h1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .box {
+      width: 500px;
+      height: 300px;
+      border: 3px solid #333;
+      margin-bottom: 30px;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+    }
+
+    /* 1. Background Color */
+    .bg-color {
+      background-color: teal;
+    }
+
+    /* 2. Background Image */
+    .bg-image {
+      background-image: url("./images/work_image.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 3. Background Repeat */
+    .bg-repeat {
+      background-image: url("./images/logo-black.png");
+      background-repeat: repeat;
+      color: darkblue;
+    }
+
+    /* 4. Background Size */
+    .bg-size {
+      background-image: url("./images/Work_image\ 2.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    /* 5. Background Position */
+    .bg-position {
+      background-image: url("./images/work_image3.jpg");
+      background-size: cover;
+      background-position: top right;
+    }
+
+    /* 6. Background Attachment */
+    .bg-attachment {
+      height: 400px;
+      background-image: url("./images/desktop_image.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    /* 7. Background shorthand property */
+    .bg-shorthand {
+      background: url("./images/work_image4.jpg") no-repeat center/cover turquoise;
+    }
