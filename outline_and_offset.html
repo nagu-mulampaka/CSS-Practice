@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline and offset</title>
+    <style>
+        .buttons{
+            margin-top:40px;
+        }
+        a{
+            margin:20px;
+            padding: 0.7rem 1.5rem;
+            background: rgb(63, 177, 171);
+            color:black;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .one{
+            border:3px solid black;
+        }
+        .two{
+            /* outline-width: 5px;
+            outline-color: orange;
+            outline-style: solid; */
+            outline:2px solid black;
+            /* outline-offset: 5px; */
+            outline-offset: -7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Css Outline and offset</h1>
+    <div class="buttons">
+        <a class="one" href="#">No Outline</a>
+        <a class="two" href="#">Outline</a>
+    </div>
+</body>
+</html>
