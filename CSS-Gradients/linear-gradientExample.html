@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+    <style>
+    
+    /* CSS Code */
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      font-weight: bold;
+      padding: 20px 0px;
+      text-align: center;
+    }
+    div {
+      width: 250px;
+      height: 250px;
+      margin: 10px;   
+    }
+    .one {
+      /* background: linear-gradient(red, green); */
+      background: linear-gradient(to bottom, green, yellow); 
+    }
+    .two {
+      background: linear-gradient(to top, blue, red);
+    }
+    .three {
+      background: linear-gradient(lightblue, rgb(217, 129, 129), #67d7e676, yellow);
+    }
+    .four {
+      background: linear-gradient(150deg, red, green);
+    }
+    .five {
+      background: linear-gradient(310deg, red, green);
+    }
+    .six {
+      background: linear-gradient(to top right, red, green);
+    }
+    .seven {
+      /* background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.9)); */
+      background: linear-gradient(to top right, rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+    }
+    </style>
+    
+</head>
+<body>
+    <h1>CSS Gradients Example</h1>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+</body>
+</html>
