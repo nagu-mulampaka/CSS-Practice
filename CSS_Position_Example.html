@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Position Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        height: 2000px; /* for scrolling */
+    }
+
+    .box {
+        width: 180px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background: #e9e9ff;
+        border: 2px solid red;
+    }
+
+    /* 1️. static */
+    .static-box {
+        position: static; /* default */
+    }
+
+    /* 2️. relative */
+    .relative-box {
+        position: relative;
+        top: 15px;
+        left: 15px;
+        background: #d0ffd0;
+    }
+
+    /* 3️. absolute */
+    .absolute-container {
+        position: relative; /* parent for absolute */
+        height: 150px;
+        background: #fff0c2;
+        border: 2px dashed #b58900;
+        margin-bottom: 20px;
+    }
+
+    .absolute-box {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #ffd6d6;
+        padding: 10px;
+    }
+
+    /* 4️. fixed */
+    .fixed-box {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #c2e0ff;
+        padding: 10px;
+        border: 2px solid #0077cc;
+    }
+
+    /* 5️. sticky */
+    .sticky-box {
+        position: sticky;
+        top: 0;
+        background: #ffebb3;
+        padding: 15px;
+        border: 2px solid blue;
+    }
+</style>
+</head>
+<body>
+
+<h2>CSS Position Property Example</h2>
+
+<div class="box static-box">
+    <strong>Static Position</strong><br>
+    Default position — does not move using top/left.
+</div>
+
+<div class="box relative-box">
+    <strong>Relative Position</strong><br>
+    Moves slightly from its normal position.
+</div>
+
+<div class="absolute-container">
+    <div class="absolute-box">
+        <strong>Absolute Position</strong><br>
+        Positioned 20px from top-right of parent.
+    </div>
+</div>
+
+<div class="sticky-box">
+    <strong>Sticky Position</strong><br>
+    Sticks to top when scrolling.
+</div>
+
+<div class="box">
+    Scroll down to see the sticky and fixed effects.
+</div>
+
+<div class="fixed-box">
+    Fixed Position<br>
+    Always visible at bottom-right.
+</div>
+
+</body>
+</html>
