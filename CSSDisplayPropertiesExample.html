@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All CSS Display Properties</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .inline {
+            display: inline;
+            background-color: #2196F3;
+        }
+
+        .block {
+            display: block;
+            background-color: #4CAF50;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            background-color: #FF9800;
+        }
+
+        .none {
+            display: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Display Properties Example</h1>
+    <h2>display: block</h2>
+    <div class="box block">Block Element 1</div>
+    <div class="box block">Block Element 2</div>
+
+    <h2>display: inline</h2>
+    <span class="box inline">Inline 1</span>
+    <span class="box inline">Inline 2</span>
+
+    <h2>display: inline-block</h2>
+    <span class="box inline-block">Inline-Block 1</span>
+    <span class="box inline-block">Inline-Block 2</span>
+
+    <h2>display: none</h2>
+    <div class="box none">This will not appear</div>
+    <p>The text moves up because the element is removed.</p>
+
+</body>
+</html>
